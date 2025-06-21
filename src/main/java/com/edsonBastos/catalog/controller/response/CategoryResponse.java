@@ -1,4 +1,7 @@
 package com.edsonBastos.catalog.controller.response;
 
-public class CategoryResponse {
+import lombok.Builder;
+
+@Builder
+public record CategoryResponse(Long id, String name) {
 }
