@@ -15,15 +15,15 @@ import java.util.Optional;
 public class CategoryService {
     private final CategoryRepository repository;
 
-    public List<CategoryResponse> getAll() {
+    public List<Category> getAll() {
         return repository.findAll();
     }
 
-    public CategoryResponse saveCategory(CategoryRequest category) {
+    public Category saveCategory(Category category) {
         return repository.save(category);
     }
 
-    public Optional<CategoryResponse> getCategoryById(Long id){
+    public Optional<Category> getCategoryById(Long id){
         return repository.findById(id);
     }
 
